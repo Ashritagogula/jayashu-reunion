@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Hero from "./components/Hero"
 import Story from "./components/Story"
 import Surprise from "./components/Surprise"
-import "./app.css"
+import "./App.css"
 
 function App() {
   return (
