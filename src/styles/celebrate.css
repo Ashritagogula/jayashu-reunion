@@ -1,0 +1,43 @@
+.celebrate-btn {
+  margin-top: 30px;
+  padding: 16px 42px;
+  font-size: 18px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+
+  color: #0f1220;
+  background: linear-gradient(135deg, #ff9ecf, #ffd86a);
+
+  box-shadow:
+    0 10px 30px rgba(255, 158, 207, 0.4),
+    inset 0 1px 0 rgba(255,255,255,0.5);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.celebrate-btn:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 15px 40px rgba(255, 158, 207, 0.55);
+}
+.confetti {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  opacity: 0.9;
+  animation: fall linear forwards;
+  z-index: 9999;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+  }
+}
+.celebrate-btn:active {
+  transform: scale(0.96);
+}

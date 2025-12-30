@@ -1,0 +1,57 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(180deg, #0f1220, #1a1f36);
+  color: #f5f6fa;
+}
+
+/* ROOT LAYOUT */
+.layout-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER (Hero component controls inner layout) */
+.layout-root > header {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* MAIN CONTENT AREA */
+.layout-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 24px;
+}
+
+/* THIS CONTROLS THE WIDTH OF ALL ROUTE CONTENT */
+.layout-main > * {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 768px) {
+  .layout-main {
+    padding: 48px 16px;
+  }
+}

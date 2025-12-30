@@ -1,0 +1,47 @@
+.jayashu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+/* LETTER STYLE */
+.jayashu-letter {
+  font-size: 96px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  color: #f5f6fa;
+
+  opacity: 0;
+  transform: scale(0.85);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+/* WHEN LETTER APPEARS */
+.jayashu-letter.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* GRADIENT HIGHLIGHT (OPTIONAL BUT BEAUTIFUL) */
+.jayashu-letter:nth-child(odd) {
+  background: linear-gradient(135deg, #ff9ecf, #ffd86a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jayashu-letter:nth-child(even) {
+  background: linear-gradient(135deg, #6aa9ff, #a6ffcb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .jayashu-letter {
+    font-size: 64px;
+  }
+}

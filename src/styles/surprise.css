@@ -1,0 +1,33 @@
+.surprise {
+  padding: 140px 20px;
+}
+
+.surprise-box {
+  max-width: 700px;
+  text-align: center;
+}
+
+button {
+  padding: 16px 42px;
+  font-size: 18px;
+  border-radius: 32px;
+  border: none;
+  background: #ff9ecf;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+button:hover {
+  transform: scale(1.06);
+}
+
+.reveal h2 {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.reveal p {
+  font-size: 18px;
+  opacity: 0.85;
+}
